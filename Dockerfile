@@ -1,5 +1,5 @@
 FROM nginx:latest
-RUN useradd -m appuser
+RUN sudo useradd -m appuser
 USER appuser
 WORKDIR /app
 RUN chmod -R 777 /app
